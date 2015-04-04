@@ -1,0 +1,41 @@
+---
+title: You fill this out now
+---
+
+.uptake
+  h1 Got Something Upworthy?
+  h4 What’s the best thing you’ve seen all week? Anything that we missed? We’d love to know what you think should be featured on Upworthy.
+  h4 Use the form below to submit your favorite stuff to us for consideration. Thanks in advance for your input!
+
+  form#upworthy
+    .input
+      input#email.input_field type="email" name="email" /
+      label.input_label.color-1 for="email"
+        span.input_label-content Email
+    .input
+      input#url.input_field type="text" name="url" /
+      label.input_label.color-1 for="url"
+        span.input_label-content Link
+    .checkboxes
+      h3 Where did you first see this content
+      .checkbox-container
+        input#facebook.checkbox type="checkbox" /
+        label for="facebook" Facebook
+      .checkbox-container
+        input#twitter.checkbox type="checkbox" /
+        label for="twitter" Twitter
+      .checkbox-container
+        input#youtube.checkbox type="checkbox" /
+        label for="youtube" Youtube
+      .checkbox-container
+        input#reddit.checkbox type="checkbox" /
+        label for="reddit" Reddit
+      .checkbox-container
+        input#myself.checkbox type="checkbox" /
+        label for="myself" Made it Myself
+    h3 Or, did you find it somewhere else?
+    .comments
+      label Tell us where
+      textarea
+    button.submit.btn.primary type="submit" Submit
+
