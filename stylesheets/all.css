@@ -100,15 +100,16 @@ body {
 .color-1::after {
   border-color: #e67e22; }
 
-/* line 91, /Users/bryan/Projects/form/source/stylesheets/all.sass */
-.error + .input_label::after {
+/* line 89, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field:focus + .input_label::after,
+.input_field.has-val + .input_label::after {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 94, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 93, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field:focus + .input_label .input_label-content,
 .input_field.has-val + .input_label .input_label-content {
   color: #e67e22;
@@ -118,7 +119,7 @@ body {
   -o-transform: translateX(0) translateY(-150%);
   transform: translateX(0) translateY(-150%); }
 
-/* line 100, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 99, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.error ~ .input_label .input_label-content,
 .input_field.valid ~ .input_label .input_label-content {
   -webkit-transform: translateX(0) translateY(-150%);
@@ -127,7 +128,7 @@ body {
   -o-transform: translateX(0) translateY(-150%);
   transform: translateX(0) translateY(-150%); }
 
-/* line 104, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 103, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.error ~ .input_label::after,
 .input_field.valid ~ .input_label::after {
   -webkit-transform: translate3d(0, 0, 0);
@@ -136,19 +137,19 @@ body {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 108, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 107, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.error ~ .input_label .input_label-content {
   color: #c0392b; }
 
-/* line 111, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 110, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.valid ~ .input_label .input_label-content {
   color: #2ecc71; }
 
-/* line 114, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 113, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.error ~ .input_label::after {
   border-color: #c0392b; }
 
-/* line 117, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 116, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .input_field.valid ~ .input_label::after {
   border-color: #2ecc71; }
 
@@ -158,39 +159,39 @@ body {
   content: "";
   display: table; }
 
-/* line 124, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 123, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .checkbox {
   opacity: 0;
   z-index: 2; }
 
-/* line 128, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 127, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .checkbox-container {
   position: relative;
   float: left;
   width: 20%; }
-  /* line 133, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  /* line 132, /Users/bryan/Projects/form/source/stylesheets/all.sass */
   .checkbox-container label {
     position: absolute;
     left: 0; }
 
-/* line 137, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 136, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .checkbox:checked + label {
   color: #e67e22; }
 
-/* line 143, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 142, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .comments label, .comments textarea {
   display: block; }
-/* line 146, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 145, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .comments textarea {
   width: 100%;
   height: 200px;
   max-width: 500px; }
 
-/* line 153, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 152, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .text-center {
   text-align: center; }
 
-/* line 157, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+/* line 156, /Users/bryan/Projects/form/source/stylesheets/all.sass */
 .btn {
   margin: 15px 0;
   padding: 5px 10px;
@@ -201,7 +202,7 @@ body {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none; }
-  /* line 164, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  /* line 163, /Users/bryan/Projects/form/source/stylesheets/all.sass */
   .btn.primary {
     background: #e67e22;
     color: white; }
