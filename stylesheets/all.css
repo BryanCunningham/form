@@ -1,0 +1,207 @@
+/* line 11, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+* {
+  line-height: 1.5; }
+
+/* line 14, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+body {
+  color: #34495e; }
+
+/* line 17, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.container {
+  width: 96%;
+  max-width: 1024px;
+  margin: auto; }
+
+/* line 24, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 500px;
+  vertical-align: top;
+  overflow: hidden;
+  z-index: 1; }
+  /* line 33, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  .input input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    line-height: 1; }
+    /* line 39, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+    .input input:focus {
+      outline: none; }
+  /* line 42, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  .input label.error {
+    position: absolute;
+    top: 50%;
+    right: 0; }
+
+/* line 47, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field {
+  margin-top: 1em;
+  padding: 0.85em 0.15em;
+  width: 100%;
+  background: transparent;
+  color: #34495e; }
+
+/* line 54, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.25em;
+  width: 100%;
+  height: calc(100% - 1em);
+  text-align: left;
+  pointer-events: none; }
+
+/* line 64, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_label-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateX(0) translateY(-50%);
+  -moz-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  -o-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s; }
+
+/* line 71, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_label::before,
+.input_label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 6px);
+  border-bottom: 1px solid #34495e; }
+
+/* line 81, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_label::after {
+  border-bottom: 4px solid;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s; }
+
+/* line 86, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.color-1::after {
+  border-color: #e67e22; }
+
+/* line 91, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.error + .input_label::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 94, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field:focus + .input_label .input_label-content,
+.input_field.has-val + .input_label .input_label-content {
+  color: #e67e22;
+  -webkit-transform: translateX(0) translateY(-150%);
+  -moz-transform: translateX(0) translateY(-150%);
+  -ms-transform: translateX(0) translateY(-150%);
+  -o-transform: translateX(0) translateY(-150%);
+  transform: translateX(0) translateY(-150%); }
+
+/* line 100, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.error ~ .input_label .input_label-content,
+.input_field.valid ~ .input_label .input_label-content {
+  -webkit-transform: translateX(0) translateY(-150%);
+  -moz-transform: translateX(0) translateY(-150%);
+  -ms-transform: translateX(0) translateY(-150%);
+  -o-transform: translateX(0) translateY(-150%);
+  transform: translateX(0) translateY(-150%); }
+
+/* line 104, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.error ~ .input_label::after,
+.input_field.valid ~ .input_label::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 108, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.error ~ .input_label .input_label-content {
+  color: #c0392b; }
+
+/* line 111, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.valid ~ .input_label .input_label-content {
+  color: #2ecc71; }
+
+/* line 114, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.error ~ .input_label::after {
+  border-color: #c0392b; }
+
+/* line 117, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.input_field.valid ~ .input_label::after {
+  border-color: #2ecc71; }
+
+/* line 20, /Users/bryan/Projects/form/source/stylesheets/bourbon/addons/_clearfix.scss */
+.checkboxes::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 124, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.checkbox {
+  opacity: 0;
+  z-index: 2; }
+
+/* line 128, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.checkbox-container {
+  position: relative;
+  float: left;
+  width: 20%; }
+  /* line 133, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  .checkbox-container label {
+    position: absolute;
+    left: 0; }
+
+/* line 137, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.checkbox:checked + label {
+  color: #e67e22; }
+
+/* line 143, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.comments label, .comments textarea {
+  display: block; }
+/* line 146, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.comments textarea {
+  width: 100%;
+  height: 200px;
+  max-width: 500px; }
+
+/* line 153, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.text-center {
+  text-align: center; }
+
+/* line 157, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+.btn {
+  margin: 15px 0;
+  padding: 5px 10px;
+  border: none;
+  line-height: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+  /* line 164, /Users/bryan/Projects/form/source/stylesheets/all.sass */
+  .btn.primary {
+    background: #e67e22;
+    color: white; }
